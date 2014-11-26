@@ -1,0 +1,8 @@
+<%
+  f = taglib("/lib/form")
+  f.section :title => 'Single User Slaves' do
+    f.entry :title => 'Labels', :field => 'sus_labels' do
+      f.textbox :default => "#{descriptor.sus_labels}"
+    end
+  end
+%>
