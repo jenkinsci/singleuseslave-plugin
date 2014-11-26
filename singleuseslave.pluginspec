@@ -4,21 +4,9 @@ Jenkins::Plugin::Specification.new do |plugin|
   plugin.version = '0.1.0'
   plugin.description = 'Allows taking slaves offline after a build runs on them'
 
-  # You should create a wiki-page for your plugin when you publish it, see
-  # https://wiki.jenkins-ci.org/display/JENKINS/Hosting+Plugins#HostingPlugins-AddingaWikipage
-  # This line makes sure it's listed in your POM.
-  #plugin.url = 'https://wiki.jenkins-ci.org/display/JENKINS/Singleuseslave+Plugin'
+  plugin.url = 'https://wiki.jenkins-ci.org/display/JENKINS/Single+Use+Slave+Plugin'
 
-  # The first argument is your user name for jenkins-ci.org.
-  plugin.developed_by "coneill", "Clayton O'Neill <clayton@oneill.net>"
-
-  # This specifies where your code is hosted.
-  # Alternatives include:
-  #  :github => 'myuser/singleuseslave-plugin' (without myuser it defaults to jenkinsci)
-  #  :git => 'git://repo.or.cz/singleuseslave-plugin.git'
-  #  :svn => 'https://svn.jenkins-ci.org/trunk/hudson/plugins/singleuseslave-plugin'
-  plugin.uses_repository :github => "singleuseslave-plugin"
-
-  # This is a required dependency for every ruby plugin.
+  plugin.developed_by "claytononeill", "Clayton O'Neill <clayton@oneill.net>"
+  plugin.uses_repository :github => "dvorak/jenkins-plugin-singleuseslave"
   plugin.depends_on 'ruby-runtime', '0.12'
 end
