@@ -1,8 +1,11 @@
 Jenkins::Plugin::Specification.new do |plugin|
   plugin.name = "singleuseslave"
   plugin.display_name = "Single Use Slave Plugin"
-  plugin.version = '0.1.1'
-  plugin.description = 'Allows taking slaves offline after a build runs on them'
+  plugin.version = '0.1.2'
+  plugin.description = <<-EOS
+    This plugin will allow taking slaves with specific labels offline when a
+    job completes
+  EOS
 
   plugin.url = 'https://wiki.jenkins-ci.org/display/JENKINS/Single+Use+Slave+Plugin'
 
