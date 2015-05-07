@@ -10,6 +10,6 @@ Jenkins::Plugin::Specification.new do |plugin|
   plugin.url = 'https://wiki.jenkins-ci.org/display/JENKINS/Single+Use+Slave+Plugin'
 
   plugin.developed_by "claytononeill", "Clayton O'Neill <clayton@oneill.net>"
-  plugin.uses_repository :github => "dvorak/jenkins-plugin-singleuseslave"
+  plugin.uses_repository :github => "jenkinsci/singleuseslave-plugin"
   plugin.depends_on 'ruby-runtime', '0.12'
 end
